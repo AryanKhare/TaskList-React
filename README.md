@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# TaskList-React
+Implementing a task list manager in React.
+Working on the frontend part only, using `localStorage` for data storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Feature
+* Each Task must have a title, description is optional, and an icon.
+* User can add, edit, and delete the task.
+* User can edit the task's description, icon, and status.
+* There are three task status types: in progress Completed and Won't work on.
+* User can edit the board name and the board description.
 
-Currently, two official plugins are available:
+## Learning in React
+* Structuring the react application.
+* Working with typescript + react.
+* Data transfer from parent to child component.
+* Form handling in react, validation, and error handling.
+* Working with `services` or `context API` to share component data.
+* Up-lifting the state.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Things to keep in mind
+* Create `types` or `interfaces` for each component, state, or service.
+* Please keep in mind all the functionalities before you implement them.
+* Follow the folder structure.
+* Try to divide the application components into smaller parts like `micro-frontends`.
+* Try to implement the UI pixel perfectly.
+* Use models for forms - add, edit, and delete functionality.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+> created by - Aryan Khare
