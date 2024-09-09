@@ -1,0 +1,10 @@
+.task-list {
+    outline: 1px solid white;
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .task-list {
+        width: 90%;
+    }
+}

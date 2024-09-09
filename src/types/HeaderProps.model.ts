@@ -1,4 +1,4 @@
-export interface AppProps {
+export interface HeaderProps {
     title: string;
     description: string;
 }
