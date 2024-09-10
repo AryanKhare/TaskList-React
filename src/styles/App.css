@@ -4,5 +4,19 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    outline: 1px solid white;
+    position: relative;
+}
+
+.modal-container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000045;
+    display: flex;
+    justify-content: end;
+    transition: 1s ease-in-out;
 }

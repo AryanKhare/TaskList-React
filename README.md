@@ -25,4 +25,11 @@ Working on the frontend part only, using `localStorage` for data storage.
 * Try to implement the UI pixel perfectly.
 * Use models for forms - add, edit, and delete functionality.
 
+## Mistakes
+* Implemented the whole solution using prop-drilling, should be implemented using `contextAPI` or some other state management library.
+* Created reuseable component and pages in the same folder i.e `components`, should be, reuseable components -> `components` and pages -> `pages`.
+
+<br />
+<br />
+
 > created by - Aryan Khare

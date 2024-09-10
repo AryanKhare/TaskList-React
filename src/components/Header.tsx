@@ -10,10 +10,10 @@ export const Header: FC<HeaderProps> = ({ title, description, setHeader }) => {
   const [content, setContent] = useState<HeaderProps>({title, description});
 
   const saveHeader = () => {
-    setHeader ? setHeader({
+    setHeader?.({
       title: content.title,
       description: content.description
-    }) : console.error("setHeader not defined");
+    })
     setEditMode(!editMode);
   }
 

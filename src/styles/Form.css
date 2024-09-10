@@ -1,0 +1,31 @@
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.fields > input, .fields > textarea {
+    background: none;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    outline: none;
+    font-family: cursive;
+}
+
+.fields > input:focus, .fields > textarea:focus {
+    border: 2px solid #3662E3;
+}
+
+.fields > textarea {
+    height: 200px;
+}

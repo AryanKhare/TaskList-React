@@ -1,0 +1,22 @@
+.type {
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    text-transform: capitalize;
+    justify-content: start;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    width: 48%;
+    background: none;
+    color: grey;
+    cursor: pointer;
+}
+
+.type > img {
+    width: 2rem;
+    padding: 0.25rem;
+    background: #32D657;
+    border: none;
+    border-radius: 0.5rem;
+}

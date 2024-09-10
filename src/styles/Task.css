@@ -2,9 +2,11 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background: lightgreen;
     gap: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
 }
 
 .icon-container, .type-container {
@@ -20,16 +22,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    color: green;
-    outline: 1px solid black;
+    justify-content: start;
+    color: black;
 }
 
 .content-container p:first-child {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .type-container > img, .icon-container > img {
-    width: 2.5rem;
+    width: 2rem;
     margin: 0.25rem;
 }
