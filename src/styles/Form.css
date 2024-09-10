@@ -20,10 +20,11 @@
     border-radius: 0.5rem;
     outline: none;
     font-family: cursive;
+    color: rgb(82, 81, 81);
 }
 
 .fields > input:focus, .fields > textarea:focus {
-    border: 2px solid #3662E3;
+    outline: 2px solid #3662E3;
 }
 
 .fields > textarea {

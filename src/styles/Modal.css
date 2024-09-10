@@ -64,3 +64,8 @@
 .modal-save > button:first-child {
     background: #97A3B6;
 }
+
+.modal-extra-container {
+    width: 50%;
+    background: transparent;
+}

@@ -1,4 +1,6 @@
-export const IconsData = [
+import { Icon } from "../types/Icon.model";
+
+export const IconsData: Icon[] = [
     {id: 1, icon: '📚'}, 
     {id: 2, icon:'👩‍💻'}, 
     {id: 3, icon: '💭'},

@@ -4,7 +4,7 @@ import "../styles/Form.css";
 export const Form: FC = () => {
   return (
     <>
-      <form className="task-form">
+      <form className="task-form" autoComplete="off">
         <div className="fields">
           <label htmlFor="title">Taskt title</label>
           <input type="text" placeholder="Enter task title" id="title" />
