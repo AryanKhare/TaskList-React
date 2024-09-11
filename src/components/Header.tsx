@@ -13,8 +13,9 @@ export const Header: FC<HeaderProps> = ({ title, description, setHeader }) => {
     setHeader?.({
       title: content.title,
       description: content.description
-    })
+    });
     setEditMode(!editMode);
+    localStorage.setItem('taskListHeader', JSON.stringify({title: content.title, description: content.description}));
   }
 
   return (

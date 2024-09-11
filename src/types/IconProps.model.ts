@@ -1,7 +1,8 @@
 import { Icon } from "./Icon.model";
+import { ITask } from "./Task.model";
 
 export interface IconProps {
     data: Icon[];
-    selectedIcon: Icon | null,
-    setSelectedIcon: (val: Icon) => void;
+    modalData: ITask,
+    setModalData: (val: ITask) => void;
 }

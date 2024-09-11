@@ -2,13 +2,21 @@ import { FC } from "react";
 import { TypeProps } from "../types/TypeProps.model";
 import "../styles/Type.css"
 
-export const Type: FC<TypeProps> = ({id, icon, text}) => {
+export const Types: FC<TypeProps> = ({data, modalData, setModalData}) => {
+    const handleClick = (text: string) => {
+        setModalData({...modalData, type: text});
+    }
     return (
         <>
-            <button className="type" key={id}>
-                <img src={icon} />
-                <p>{text}</p>
-            </button>
+            {data.map((item) => (
+                <button 
+                    className={`type ${modalData.type === item.text ? 'selected' : ''}`} 
+                    key={item.id}
+                    onClick={() => handleClick(item.text)}>
+                    <img src={item.icon} />
+                    <p>{item.text}</p>
+                </button>
+            ))}
         </>
     )
 }

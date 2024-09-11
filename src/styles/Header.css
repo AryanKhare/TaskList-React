@@ -21,6 +21,7 @@
     justify-content: start;
     gap: 1rem;
     font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .title img {
@@ -29,6 +30,8 @@
 
 .content > p {
     font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0.4rem;
 }
 
 @media (max-width: 800px) {
@@ -39,4 +42,20 @@
     .title {
         font-size: 1.6rem;
     }
+}
+
+.edit-title, .edit-description {
+    font-size: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.edit-description {
+    margin-top: 0.45rem;
+    font-size: 1rem;
+    width: 89%;
 }

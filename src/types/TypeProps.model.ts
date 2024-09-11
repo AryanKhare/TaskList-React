@@ -1,5 +1,14 @@
-export interface TypeProps {
+import { ITask } from "./Task.model";
+
+interface TypeData {
     id: number;
-    icon: string;
     text: string;
+    icon: string;
 }
+
+export interface TypeProps {
+    data: TypeData[];
+    modalData: ITask,
+    setModalData: (val: ITask) => void;
+}
+

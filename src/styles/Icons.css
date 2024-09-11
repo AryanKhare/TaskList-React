@@ -3,6 +3,7 @@
     border: none;
     border-radius: 0.5rem;
     background: rgba(113, 181, 236, 0.5);
+    cursor: pointer;
 }
 
 .selected {

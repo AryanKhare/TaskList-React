@@ -1,6 +1,7 @@
 .type {
     border: 1px solid grey;
     border-radius: 0.5rem;
+    outline: none;
     display: flex;
     gap: 1rem;
     text-transform: capitalize;
@@ -19,4 +20,8 @@
     background: #32D657;
     border: none;
     border-radius: 0.5rem;
+}
+
+.selected {
+    border: 2px solid #3662E3;
 }

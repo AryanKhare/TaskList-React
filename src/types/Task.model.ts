@@ -7,4 +7,8 @@ export interface ITask {
     iconId: number;
     createdOn: Date;
     lastUpdated?: Date;
+    setEditMode?: (val: boolean) => void;
+    setSelectedTask?: (val: ITask) => void;
+    setModalOpen?: (val: boolean) => void;
+    item?: ITask;
 }
