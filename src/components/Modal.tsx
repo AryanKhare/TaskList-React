@@ -28,21 +28,27 @@ export const Modal: FC<ModalProps> = ({ setModalOpen, setTasks, tasks, editMode,
     (title && iconId !== -1) ? setIsDisable(false) : setIsDisable(true);
   }, [modalData]);
 
-  const handleSave = () => {
-    editMode ? ( tasks.forEach((item, index) => {item.id === modalData.id ? tasks[index] = {...item, ...modalData} : item}))
-             : (tasks.push(modalData));
-    
+  const saveAndEdit = () => {
+    editMode ? ( tasks.forEach((item, index) => {item.id === modalData.id ? tasks[index] = {...item, ...modalData} : item})) : (tasks.push(modalData));
     localStorage.setItem('taskList', JSON.stringify(tasks));
     setTasks(tasks);
-    setModalOpen(false);
-    setEditMode(false);
-    setSelectedTask?.(null);
   }
 
   const handleEditMode = () => {
     setModalOpen(false);
     setEditMode(false);
     setSelectedTask?.(null);
+  }
+
+  const handleSave = () => {
+    saveAndEdit();
+    handleEditMode();
+  }
+
+  const handleDelete = () => {
+    tasks = tasks.filter((item) => item.id !== modalData.id);
+    saveAndEdit();
+    handleEditMode();
   }
 
   return (
@@ -66,7 +72,7 @@ export const Modal: FC<ModalProps> = ({ setModalOpen, setTasks, tasks, editMode,
         </div>
 
         <div className="modal-save">
-          {editMode && <button onClick={handleEditMode} className="delete">
+          {editMode && <button onClick={handleDelete} className="delete">
             <img src={trashLogo} />
             <span>Delete</span>
           </button> }
