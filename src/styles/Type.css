@@ -17,7 +17,7 @@
 .type > img {
     width: 2rem;
     padding: 0.25rem;
-    background: #32D657;
+    /* background: #32D657; */
     border: none;
     border-radius: 0.5rem;
 }

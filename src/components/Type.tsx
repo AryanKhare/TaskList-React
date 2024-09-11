@@ -13,7 +13,7 @@ export const Types: FC<TypeProps> = ({data, modalData, setModalData}) => {
                     className={`type ${modalData.type === item.text ? 'selected' : ''}`} 
                     key={item.id}
                     onClick={() => handleClick(item.text)}>
-                    <img src={item.icon} />
+                    <img src={item.icon} className={item.text === "Completed" ? 'completed' : item.text === "In progress" ? 'inProgress' : 'wontDo'}/>
                     <p>{item.text}</p>
                 </button>
             ))}
